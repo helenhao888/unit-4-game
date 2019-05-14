@@ -1,0 +1,94 @@
+h1 {
+    background-color:white;
+    font-weight:bold;
+    color:orange;
+    height:auto;
+    font-family: 'Georgia', Times, Times New Roman, serif;
+    font-size:36px;
+    text-shadow: blue 0 -2px;
+    text-transform:uppercase;
+    border:0px;
+    float:right;
+}
+
+h2{
+  color:powderblue;
+  font-size:32px;
+
+}
+.wholebody{
+    
+  background-image: url("../images/starWarbg.jpg");
+  background-color:#ffffff;
+  top: 15px;
+  width: 100%; 
+ /* overflow: auto;*/
+  height:100%; 
+  font-family:"Arial', 'Helvetica Neue', Helvetica, sans-serif";
+   }
+
+.imgCharBox1,.imgCharBox2,.imgCharBox3,.imgCharBox4,.imgEnemyBox1,.imgEnemyBox2,.imgEnemyBox3{
+  padding:15px;
+  margin:15px,10px,15px,10px;
+  color:purple;
+  background:white;
+  height:100px;
+  width:150px;
+  border-style:solid;
+  border-color:green;
+  border-width: 5px;
+  position: relative;
+}
+
+ .imgCharacter{
+  width:100%;
+  height:100%;
+  
+} */
+
+.imgEnemyBox1,.imgEnemyBox2,.imgEnemyBox3{
+  
+  border-color:red;
+  visibility: hidden;
+
+}
+
+.imgDefender{
+  position: relative;
+  margin:10px;
+  border-style:solid;
+  border-color:red;
+  border-width: 5px;
+  visibility: hidden;
+}
+
+.btn-info{
+float:left;
+color:black;
+margin-top : 20px;
+background:grey;
+border-color:transparent;
+}
+
+.restartBtn{
+  display:none;
+}
+
+.characterName{
+  position: absolute;
+  align-content: center;
+  top:0px; 
+  left:40px;
+  font-weight: 100;
+}
+
+.healthPoint{
+  position: absolute;
+  align-content: center;
+  bottom:0px;
+  left:40px;
+  font-weight: 100;
+}
+/* .maincontent{
+    max-width:960px;
+} */

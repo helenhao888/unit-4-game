@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+
+    <head>
+        <meta charset="utf-8">
+        <title>Star Wars Game</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <link rel="stylesheet" href="assets/css/reset.css">
+        <link rel="stylesheet" href="assets/css/style.css">
+        <!-- Added link to the jQuery Library -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    </head>
+    <body>
+    
+        <header >
+            <h1>Star Wars RPG !</h1>              
+        </header>
+
+        <div class="container-fluid bg-light wholebody" >
+                <div class="row">
+                        <div class=" col-3 col-sm-3 col-md-2 col-lg-2 imgCharBox1">
+                           
+                                <img src="assets/images/captain.jpg" class="img-fluid imgCharacter" id="imgCap" value="120" attack="9" conAttack ="8" alt="Captain Picture"  >  
+                                <div class="characterName" id="capName">Captain</div>         
+                                <span class="healthPoint" id="capHp">120</span>
+
+                        </div> 
+                        <div class=" col-3 col-sm-3 col-md-2 col-lg-2  imgCharBox2">
+                           
+                                <img src="assets/images/DarthVader.jpeg" class="img-fluid imgCharacter" id="imgDar" value="100" attack="12" conAttack ="10" alt="Darth Vader Picture"  >                                                
+                                <div class="characterName" id="darName">Darth Vader</div>         
+                                <span class="healthPoint" id="darHp">100</span>
+                        </div> 
+                        <div class=" col-3 col-sm-3 col-md-2 col-lg-2  imgCharBox3">                           
+                                <img src="assets/images/mace.jpg" class="img-fluid imgCharacter" id="imgMace" value="150" attack="8" conAttack ="7" alt="Mace Picture"  >                                                
+                                <div class="characterName"  id="maceName">Mace</div>         
+                                <span class="healthPoint" id="maceHp">150</span>
+                        </div> 
+                        <div class=" col-3 col-sm-3 col-md-2 col-lg-2  imgCharBox4">
+                           
+                                <img src="assets/images/yoda.jpg" class="img-fluid imgCharacter" id="imgYoda" value="180" attack="7" conAttack ="6"  alt="Yoda Picture"  >
+                                <div class="characterName" id ="yodaName">Yoda</div>         
+                                <span class="healthPoint" id="yodaHp">180</span>                                                
+                        </div> 
+                </div>
+
+                <div class="row">
+                    <h2>Your Character </h2>
+                </div>
+
+                <div class="row">
+                        <div class=" col-3 col-sm-3 col-md-2 col-lg-2 imgEnemyBox1">                           
+                                                                       
+                        </div> 
+                        <div class=" col-3 col-sm-3 col-md-2 col-lg-2 imgEnemyBox2">
+                                                                        
+                        </div> 
+                        <div class=" col-3 col-sm-3 col-md-2 col-lg-2 imgEnemyBox3">
+                                                                       
+                        </div> 
+                       
+                </div>
+                <br>
+                <br>
+                <div class="row">
+                        <br>
+                        <h2>Enemies Available To Attack </h2>
+                </div>
+                <br>
+                <br>
+                <div class="row">
+                        <h2>Fight Section</h2>                        
+                                         
+                </div>
+                <br>
+                <br>
+                <div class="row">
+                                           
+                        <button class="btn btn-info attackBtn" onclick="attackClickFunction()"> Attack</button>                   
+                </div>
+                <br>
+                <br>
+                <div class="row">
+                        <br>
+                        <h2>Defender</h2>
+                        <br>
+                </div>
+                <br>
+                <br>
+
+                <div class="row">
+                        <div class=" col-3 col-sm-3 col-md-2 col-lg-2 imgDefender">
+                           
+                                <img src="" class="img-fluid" id="imgDefender" alt="Defender Picture"  >                                                
+                        </div>                      
+                       
+                </div>
+
+                <div class="row">                    
+                        <span class="attackmsg"></span>
+                        
+                </div>
+                <div class="row">
+                        <button class="btn btn-info restartBtn" onclick="resClickFunction()">Restart</button>    
+                </div>
+        </div>    
+
+        <script src="assets/javascript/game.js" async defer></script>
+    </body>
+</html>

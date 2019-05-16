@@ -17,28 +17,28 @@
         </header>
 
         <div class="container-fluid bg-light wholebody" >
-                <div class="row">
-                        <div class=" col-3 col-sm-3 col-md-2 col-lg-2 imgCharBox1">
+                <div class="row" id="charBox">
+                        <div class=" col-3 col-sm-3 col-md-2 col-lg-2 imgCharBox1 imgCharacter" id="imgCap">
                            
-                                <img src="assets/images/captain.jpg" class="img-fluid imgCharacter" id="imgCap" value="120" attack="9" conAttack ="8" alt="Captain Picture"  >  
+                                <img src="assets/images/captain.jpg" class="img-fluid imgCharContent"  alt="Captain Picture"  >  
                                 <div class="characterName" id="capName">Captain</div>         
                                 <span class="healthPoint" id="capHp">120</span>
 
                         </div> 
-                        <div class=" col-3 col-sm-3 col-md-2 col-lg-2  imgCharBox2">
+                        <div class=" col-3 col-sm-3 col-md-2 col-lg-2  imgCharBox2 imgCharacter " id="imgDar" >
                            
-                                <img src="assets/images/DarthVader.jpeg" class="img-fluid imgCharacter" id="imgDar" value="100" attack="12" conAttack ="10" alt="Darth Vader Picture"  >                                                
+                                <img src="assets/images/DarthVader.jpeg" class="img-fluid imgCharContent"  alt="Darth Vader Picture"  >                                                
                                 <div class="characterName" id="darName">Darth Vader</div>         
                                 <span class="healthPoint" id="darHp">100</span>
                         </div> 
-                        <div class=" col-3 col-sm-3 col-md-2 col-lg-2  imgCharBox3">                           
-                                <img src="assets/images/mace.jpg" class="img-fluid imgCharacter" id="imgMace" value="150" attack="8" conAttack ="7" alt="Mace Picture"  >                                                
+                        <div class=" col-3 col-sm-3 col-md-2 col-lg-2  imgCharBox3 imgCharacter" id="imgMace" >                           
+                                <img src="assets/images/mace.jpg" class="img-fluid imgCharContent"alt="Mace Picture"  >                                                
                                 <div class="characterName"  id="maceName">Mace</div>         
                                 <span class="healthPoint" id="maceHp">150</span>
                         </div> 
-                        <div class=" col-3 col-sm-3 col-md-2 col-lg-2  imgCharBox4">
+                        <div class=" col-3 col-sm-3 col-md-2 col-lg-2  imgCharBox4 imgCharacter" id="imgYoda" >
                            
-                                <img src="assets/images/yoda.jpg" class="img-fluid imgCharacter" id="imgYoda" value="180" attack="7" conAttack ="6"  alt="Yoda Picture"  >
+                                <img src="assets/images/yoda.jpg" class="img-fluid imgCharContent"  alt="Yoda Picture"  >
                                 <div class="characterName" id ="yodaName">Yoda</div>         
                                 <span class="healthPoint" id="yodaHp">180</span>                                                
                         </div> 
@@ -47,61 +47,40 @@
                 <div class="row">
                     <h2>Your Character </h2>
                 </div>
-
-                <div class="row">
-                        <div class=" col-3 col-sm-3 col-md-2 col-lg-2 imgEnemyBox1">                           
-                                                                       
-                        </div> 
-                        <div class=" col-3 col-sm-3 col-md-2 col-lg-2 imgEnemyBox2">
-                                                                        
-                        </div> 
-                        <div class=" col-3 col-sm-3 col-md-2 col-lg-2 imgEnemyBox3">
-                                                                       
-                        </div> 
-                       
-                </div>
-                <br>
-                <br>
-                <div class="row">
-                        <br>
+                <div class="row" id="enemyBox">
+                        
+                </div>                    
+            
+                <div class="row">                     
                         <h2>Enemies Available To Attack </h2>
-                </div>
-                <br>
-                <br>
-                <div class="row">
                         <h2>Fight Section</h2>                        
                                          
                 </div>
-                <br>
-                <br>
+               
                 <div class="row">
                                            
-                        <button class="btn btn-info attackBtn" onclick="attackClickFunction()"> Attack</button>                   
+                        <button class="btn btn-info attackBtn" > Attack</button>                   
                 </div>
                 <br>
-                <br>
-                <div class="row">
-                        <br>
+                <div class="row">                       
                         <h2>Defender</h2>
-                        <br>
-                </div>
-                <br>
-                <br>
-
-                <div class="row">
-                        <div class=" col-3 col-sm-3 col-md-2 col-lg-2 imgDefender">
-                           
-                                <img src="" class="img-fluid" id="imgDefender" alt="Defender Picture"  >                                                
-                        </div>                      
+                       
+                </div>              
+               
+                <div class="row" id="defenderBox">                                      
                        
                 </div>
 
-                <div class="row">                    
-                        <span class="attackmsg"></span>
-                        
+                <div  id="attackMsg">                    
+                    <span></span>  
+                    <br>    
+                    <p></p>                   
                 </div>
                 <div class="row">
-                        <button class="btn btn-info restartBtn" onclick="resClickFunction()">Restart</button>    
+                        <button class="btn btn-info restartBtn">Restart</button>    
+                </div>
+                <div class = "row" id = "bkBox">
+                 
                 </div>
         </div>    
 

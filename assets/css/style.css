@@ -27,7 +27,7 @@ h2{
   font-family:"Arial', 'Helvetica Neue', Helvetica, sans-serif";
    }
 
-.imgCharBox1,.imgCharBox2,.imgCharBox3,.imgCharBox4,.imgEnemyBox1,.imgEnemyBox2,.imgEnemyBox3{
+.imgCharBox1,.imgCharBox2,.imgCharBox3,.imgCharBox4{
   padding:15px;
   margin:15px,10px,15px,10px;
   color:purple;
@@ -40,18 +40,18 @@ h2{
   position: relative;
 }
 
- .imgCharacter{
+ .imgCharContent{
   width:100%;
   height:100%;
   
 } */
 
-.imgEnemyBox1,.imgEnemyBox2,.imgEnemyBox3{
+/* .imgEnemyBox1,.imgEnemyBox2,.imgEnemyBox3{
   
   border-color:red;
   visibility: hidden;
-
-}
+  border-width: 5px;
+} */
 
 .imgDefender{
   position: relative;

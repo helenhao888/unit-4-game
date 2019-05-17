@@ -1,4 +1,4 @@
-var capChar, imgId;
+var imgId = "";
 var selectDefFlag=true;
 var firstSelectFlg=false;
 var fighterHp = 0; 
@@ -13,6 +13,7 @@ var defenderId,fighterId = "";
 var gameOverFlg = false;
 var enemyNum = 0;
 var defenderNum = 0;
+const maxEnemyNum = 3;
 //define array, 1:character id, 2:health points, 3:  attack power
 // 4: Counter Attack Power 5: base Attack Power
 //charInitial for the initial value, never change, charUpdate for updated value
@@ -26,17 +27,7 @@ var charUpdate = [["imgCap",120,8,8,"Captain",8],
             ["imgYoda",180,6,10,"Yoda",10]]
 
 $(document).ready(function() {
-
-     function initializeFun(){
-      //find somewhere to set it up
-        // firstSelectFlg = false;
-        // gameOverFlg = false;
-        $(".imgEnemyBox1").hide();
-        $(".imgEnemyBox2").hide();
-        $(".imgEnemyBox3").hide();
-     }
-
-    initializeFun();
+  
 
 
 $(".imgCharacter").on("click",function(){
@@ -64,7 +55,8 @@ function selectCharFun(){
                 console.log("imgcap")  ;    
                 $(".imgCharBox2").detach().appendTo("#enemyBox");
                 $(".imgCharBox3").detach().appendTo("#enemyBox");
-                $(".imgCharBox4").detach().appendTo("#enemyBox");              
+                $(".imgCharBox4").detach().appendTo("#enemyBox");     
+                $('#your_modal_id').clone().prop("id", "new_modal_id").appendTo("target_container");         
                 break;
              case "imgDar":            
                 $(".imgCharBox1").detach().appendTo("#enemyBox");
@@ -82,7 +74,7 @@ function selectCharFun(){
                 $(".imgCharBox3").detach().appendTo("#enemyBox");
                 break;
         }
-        enemyNum +=3;
+        enemyNum += maxEnemyNum;
         console.log("enemy number ",enemyNum);
     }
                             
@@ -209,5 +201,21 @@ function removeDefender(){
     defenderNum--;
     $("#bkBox").hide();
 }
+
+$(".restartBtn").on("click",function(){
+    console.log(" add restart logic");
+    // recreate the initial characters' layout, detach all imgCharBox1 to 4 from enemyBox and defenderBox
+    // append to charBox in the initial order
+
+    $(".charBox").
+
+    // initialize the flag variables
+    firstSelectFlg = false;
+    gameOverFlg = false;
+    selectDefFlag = true;
+    enemyNum = 0;
+    defenderNum = 0;
+})
+
 })
 

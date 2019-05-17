@@ -1,5 +1,5 @@
 h1 {
-    background-color:white;
+    background-color:transparent;
     font-weight:bold;
     color:orange;
     height:auto;
@@ -89,6 +89,8 @@ border-color:transparent;
   left:40px;
   font-weight: 100;
 }
-/* .maincontent{
-    max-width:960px;
-} */
+
+span,p{
+  font-weight: bold;
+  color:white;
+}
